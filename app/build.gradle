@@ -22,11 +22,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.amaze.filemanager"
+        applicationId "com.seekers.hd"
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 89
-        versionName "3.5.0"
+        versionCode 1
+        versionName "1.0.0"
         multiDexEnabled true
 
         vectorDrawables.useSupportLibrary = true

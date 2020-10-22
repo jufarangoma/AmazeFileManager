@@ -18,19 +18,6 @@
             android:minHeight="@dimen/drawer_header_height"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"/>
-        <TextView
-            android:id="@+id/app_version"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:padding="@dimen/md_content_padding_top"
-            android:text="@string/app_version"
-            android:textColor="@android:color/white"
-            android:visibility="gone"
-            android:textSize="@dimen/md_content_textsize"
-            />
         <ImageView
             android:id="@+id/donate"
             android:layout_width="wrap_content"

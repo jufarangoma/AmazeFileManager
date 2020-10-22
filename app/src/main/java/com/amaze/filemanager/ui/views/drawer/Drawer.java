@@ -128,7 +128,6 @@ public class Drawer implements NavigationView.OnNavigationItemSelectedListener {
   private View drawerHeaderLayout, drawerHeaderView;
   private ImageView donateImageView;
   private ImageView telegramImageView;
-  private TextView appVersion;
 
   /** Tablet is defined as 'width > 720dp' */
   private boolean isOnTablet = false;
@@ -145,10 +144,7 @@ public class Drawer implements NavigationView.OnNavigationItemSelectedListener {
     drawerHeaderView = drawerHeaderLayout.findViewById(R.id.drawer_header);
     donateImageView = drawerHeaderLayout.findViewById(R.id.donate);
     telegramImageView = drawerHeaderLayout.findViewById(R.id.telegram);
-    appVersion = drawerHeaderLayout.findViewById(R.id.app_version);
-    if (BuildConfig.DEBUG) {
-      appVersion.setVisibility(View.VISIBLE);
-    }
+
     donateImageView.setOnClickListener(v -> new Billing(mainActivity));
     telegramImageView.setOnClickListener(v -> Utils.openURL(URL_TELEGRAM, mainActivity));
     /*drawerHeaderView.setOnLongClickListener(
@@ -212,7 +208,7 @@ public class Drawer implements NavigationView.OnNavigationItemSelectedListener {
     mDrawerLayout = mainActivity.findViewById(R.id.drawer_layout);
     // mDrawerLayout.setStatusBarBackgroundColor(Color.parseColor((currentTab==1 ? skinTwo :
     // skin)));
-    drawerHeaderView.setBackgroundResource(R.drawable.amaze_header);
+    drawerHeaderView.setBackgroundResource(R.drawable.ic_seekers_hd);
     // drawerHeaderParent.setBackgroundColor(Color.parseColor((currentTab==1 ? skinTwo : skin)));
     if (mainActivity.findViewById(R.id.tab_frame) != null) {
       isOnTablet = true;
